@@ -1,0 +1,8 @@
+[
+  { "id": 1, "username": "huykaka", "password": "123456", "role": "admin" },
+  { "id": 2, "username": "hazim", "password": "123456", "role": "admin" },
+  { "id": 3, "username": "ducanh", "password": "123456", "role": "admin" },
+  { "id": 4, "username": "hau", "password": "123456", "role": "người dùng" },
+  { "id": 5, "username": "huy", "password": "123456", "role": "người dùng" },
+  { "id": 6, "username": "điệp", "password": "123456", "role": "người dùng" }
+]
