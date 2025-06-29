@@ -18481,3 +18481,461 @@ sqlite3.IntegrityError: NOT NULL constraint failed: telegram_messages.message_id
 2025-06-29 04:56:14,467 - WARNI - monitor_and_execute_trade - [ARBUSDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
 2025-06-29 04:56:14,468 - INFO  - monitor_and_execute_trade - [ARBUSDT] - ℹ️  Đã kiểm tra tất cả các cặp coin.
 2025-06-29 04:56:14,469 - INFO  - monitor_and_execute_trade - [ARBUSDT] - ℹ️  Đang chờ 5 phút trước khi kiểm tra lại...
+2025-06-29 04:57:32,650 - ERROR - send_message              - ❌  [Bot[token=7939426875:AAGkhJ9AapXYeNeZ3_lSp36Nr_pILLpEMB0]] Lỗi gửi tin nhắn: Message to edit not found
+Traceback (most recent call last):
+  File "/app/bot_telegram.py", line 16, in send_message
+    message = await bot.edit_message_text(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 4293, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 809, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 697, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 726, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 197, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 353, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message to edit not found
+2025-06-29 04:57:32,651 - ERROR - db_insert_or_update_messa - ❌  Lỗi khi insert/update message_id cho key_map_id daily_pnl_2025-06-29 và bot_type signal: NOT NULL constraint failed: telegram_messages.message_id
+Traceback (most recent call last):
+  File "/app/db_queries.py", line 239, in db_insert_or_update_message_id
+    cursor.execute(
+sqlite3.IntegrityError: NOT NULL constraint failed: telegram_messages.message_id
+2025-06-29 04:58:39,215 - ERROR - send_message              - ❌  [Bot[token=7939426875:AAGkhJ9AapXYeNeZ3_lSp36Nr_pILLpEMB0]] Lỗi gửi tin nhắn: Message to edit not found
+Traceback (most recent call last):
+  File "/app/bot_telegram.py", line 16, in send_message
+    message = await bot.edit_message_text(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 4293, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 809, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 697, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 726, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 197, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 353, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message to edit not found
+2025-06-29 04:58:39,217 - ERROR - db_insert_or_update_messa - ❌  Lỗi khi insert/update message_id cho key_map_id pnl_in_day_2025-06-29 và bot_type signal: NOT NULL constraint failed: telegram_messages.message_id
+Traceback (most recent call last):
+  File "/app/db_queries.py", line 239, in db_insert_or_update_message_id
+    cursor.execute(
+sqlite3.IntegrityError: NOT NULL constraint failed: telegram_messages.message_id
+2025-06-29 05:01:14,478 - INFO  - monitor_and_execute_trade - [BTCUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,479 - INFO  - monitor_and_execute_trade - [BTCUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: BTCUSDT🚀
+2025-06-29 05:01:14,480 - INFO  - monitor_and_execute_trade - [BTCUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,600 - INFO  - monitor_and_execute_trade - [BTCUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:14,601 - INFO  - monitor_and_execute_trade - [BTCUSDT] - ℹ️  
+
+2025-06-29 05:01:14,602 - INFO  - monitor_and_execute_trade - [ETHUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,605 - INFO  - monitor_and_execute_trade - [ETHUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: ETHUSDT🚀
+2025-06-29 05:01:14,605 - INFO  - monitor_and_execute_trade - [ETHUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,616 - WARNI - monitor_and_execute_trade - [ETHUSDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
+2025-06-29 05:01:14,616 - INFO  - monitor_and_execute_trade - [ALPACAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,618 - INFO  - monitor_and_execute_trade - [ALPACAUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: ALPACAUSDT🚀
+2025-06-29 05:01:14,620 - INFO  - monitor_and_execute_trade - [ALPACAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,638 - ERROR - check_spread_slippage     - [ALPACAUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho ALPACAUSDT: list index out of range
+2025-06-29 05:01:14,638 - WARNI - monitor_and_execute_trade - [ALPACAUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:14,638 - INFO  - monitor_and_execute_trade - [SOLUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,639 - INFO  - monitor_and_execute_trade - [SOLUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: SOLUSDT🚀
+2025-06-29 05:01:14,639 - INFO  - monitor_and_execute_trade - [SOLUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,743 - INFO  - monitor_and_execute_trade - [SOLUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:14,744 - INFO  - monitor_and_execute_trade - [SOLUSDT] - ℹ️  
+
+2025-06-29 05:01:14,747 - INFO  - monitor_and_execute_trade - [PENGUUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,747 - INFO  - monitor_and_execute_trade - [PENGUUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: PENGUUSDT🚀
+2025-06-29 05:01:14,749 - INFO  - monitor_and_execute_trade - [PENGUUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,850 - INFO  - check_rsi                 - [PENGUUSDT] - ℹ️  RSI tăng dần từ vùng thấp: 34.83 → 37.65 → 39.81
+2025-06-29 05:01:14,860 - INFO  - monitor_and_execute_trade - [PENGUUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:14,861 - INFO  - monitor_and_execute_trade - [PENGUUSDT] - ℹ️  
+
+2025-06-29 05:01:14,863 - INFO  - monitor_and_execute_trade - [XRPUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,865 - INFO  - monitor_and_execute_trade - [XRPUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: XRPUSDT🚀
+2025-06-29 05:01:14,865 - INFO  - monitor_and_execute_trade - [XRPUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,973 - INFO  - monitor_and_execute_trade - [XRPUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:14,974 - INFO  - monitor_and_execute_trade - [XRPUSDT] - ℹ️  
+
+2025-06-29 05:01:14,976 - INFO  - monitor_and_execute_trade - [SAHARAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:14,978 - INFO  - monitor_and_execute_trade - [SAHARAUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: SAHARAUSDT🚀
+2025-06-29 05:01:14,978 - INFO  - monitor_and_execute_trade - [SAHARAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,087 - INFO  - monitor_and_execute_trade - [SAHARAUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:15,088 - INFO  - monitor_and_execute_trade - [SAHARAUSDT] - ℹ️  
+
+2025-06-29 05:01:15,090 - INFO  - monitor_and_execute_trade - [BNXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,092 - INFO  - monitor_and_execute_trade - [BNXUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: BNXUSDT🚀
+2025-06-29 05:01:15,092 - INFO  - monitor_and_execute_trade - [BNXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,113 - ERROR - check_spread_slippage     - [BNXUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho BNXUSDT: list index out of range
+2025-06-29 05:01:15,114 - WARNI - monitor_and_execute_trade - [BNXUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:15,117 - INFO  - monitor_and_execute_trade - [1000PEPEUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,117 - INFO  - monitor_and_execute_trade - [1000PEPEUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: 1000PEPEUSDT🚀
+2025-06-29 05:01:15,117 - INFO  - monitor_and_execute_trade - [1000PEPEUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,230 - INFO  - monitor_and_execute_trade - [1000PEPEUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:15,232 - INFO  - monitor_and_execute_trade - [1000PEPEUSDT] - ℹ️  
+
+2025-06-29 05:01:15,233 - INFO  - monitor_and_execute_trade - [DOGEUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,235 - INFO  - monitor_and_execute_trade - [DOGEUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: DOGEUSDT🚀
+2025-06-29 05:01:15,236 - INFO  - monitor_and_execute_trade - [DOGEUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,342 - INFO  - monitor_and_execute_trade - [DOGEUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:15,344 - INFO  - monitor_and_execute_trade - [DOGEUSDT] - ℹ️  
+
+2025-06-29 05:01:15,345 - INFO  - monitor_and_execute_trade - [SUIUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,347 - INFO  - monitor_and_execute_trade - [SUIUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: SUIUSDT🚀
+2025-06-29 05:01:15,348 - INFO  - monitor_and_execute_trade - [SUIUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,458 - INFO  - monitor_and_execute_trade - [SUIUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:15,459 - INFO  - monitor_and_execute_trade - [SUIUSDT] - ℹ️  
+
+2025-06-29 05:01:15,461 - INFO  - monitor_and_execute_trade - [BANANAS31USDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,463 - INFO  - monitor_and_execute_trade - [BANANAS31USDT] - ℹ️  🚀 Đang kiểm tra cặp coin: BANANAS31USDT🚀
+2025-06-29 05:01:15,463 - INFO  - monitor_and_execute_trade - [BANANAS31USDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,474 - WARNI - monitor_and_execute_trade - [BANANAS31USDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
+2025-06-29 05:01:15,474 - INFO  - monitor_and_execute_trade - [FARTCOINUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,474 - INFO  - monitor_and_execute_trade - [FARTCOINUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: FARTCOINUSDT🚀
+2025-06-29 05:01:15,477 - INFO  - monitor_and_execute_trade - [FARTCOINUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,544 - WARNI - monitor_and_execute_trade - [FARTCOINUSDT] - ⚠️  Không có trend rõ ràng: long=uptrend, medium=sideway, short=downtrend
+2025-06-29 05:01:15,545 - INFO  - monitor_and_execute_trade - [WIFUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,546 - INFO  - monitor_and_execute_trade - [WIFUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: WIFUSDT🚀
+2025-06-29 05:01:15,549 - INFO  - monitor_and_execute_trade - [WIFUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,558 - WARNI - monitor_and_execute_trade - [WIFUSDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
+2025-06-29 05:01:15,558 - INFO  - monitor_and_execute_trade - [SEIUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,559 - INFO  - monitor_and_execute_trade - [SEIUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: SEIUSDT🚀
+2025-06-29 05:01:15,561 - INFO  - monitor_and_execute_trade - [SEIUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,627 - WARNI - monitor_and_execute_trade - [SEIUSDT] - ⚠️  Không có trend rõ ràng: long=uptrend, medium=downtrend, short=sideway
+2025-06-29 05:01:15,628 - INFO  - monitor_and_execute_trade - [FUNUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,630 - INFO  - monitor_and_execute_trade - [FUNUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: FUNUSDT🚀
+2025-06-29 05:01:15,632 - INFO  - monitor_and_execute_trade - [FUNUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,744 - INFO  - monitor_and_execute_trade - [FUNUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:15,745 - INFO  - monitor_and_execute_trade - [FUNUSDT] - ℹ️  
+
+2025-06-29 05:01:15,747 - INFO  - monitor_and_execute_trade - [WUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,749 - INFO  - monitor_and_execute_trade - [WUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: WUSDT🚀
+2025-06-29 05:01:15,749 - INFO  - monitor_and_execute_trade - [WUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,859 - INFO  - monitor_and_execute_trade - [WUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:15,860 - INFO  - monitor_and_execute_trade - [WUSDT] - ℹ️  
+
+2025-06-29 05:01:15,862 - INFO  - monitor_and_execute_trade - [MYXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,864 - INFO  - monitor_and_execute_trade - [MYXUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: MYXUSDT🚀
+2025-06-29 05:01:15,864 - INFO  - monitor_and_execute_trade - [MYXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,974 - INFO  - monitor_and_execute_trade - [MYXUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:15,975 - INFO  - monitor_and_execute_trade - [MYXUSDT] - ℹ️  
+
+2025-06-29 05:01:15,977 - INFO  - monitor_and_execute_trade - [BCHUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:15,979 - INFO  - monitor_and_execute_trade - [BCHUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: BCHUSDT🚀
+2025-06-29 05:01:15,979 - INFO  - monitor_and_execute_trade - [BCHUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,087 - INFO  - monitor_and_execute_trade - [BCHUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:16,088 - INFO  - monitor_and_execute_trade - [BCHUSDT] - ℹ️  
+
+2025-06-29 05:01:16,090 - INFO  - monitor_and_execute_trade - [LPTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,092 - INFO  - monitor_and_execute_trade - [LPTUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: LPTUSDT🚀
+2025-06-29 05:01:16,092 - INFO  - monitor_and_execute_trade - [LPTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,201 - INFO  - monitor_and_execute_trade - [LPTUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:16,202 - INFO  - monitor_and_execute_trade - [LPTUSDT] - ℹ️  
+
+2025-06-29 05:01:16,204 - INFO  - monitor_and_execute_trade - [AAVEUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,206 - INFO  - monitor_and_execute_trade - [AAVEUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: AAVEUSDT🚀
+2025-06-29 05:01:16,206 - INFO  - monitor_and_execute_trade - [AAVEUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,311 - INFO  - monitor_and_execute_trade - [AAVEUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:16,313 - INFO  - monitor_and_execute_trade - [AAVEUSDT] - ℹ️  
+
+2025-06-29 05:01:16,315 - INFO  - monitor_and_execute_trade - [UNIUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,317 - INFO  - monitor_and_execute_trade - [UNIUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: UNIUSDT🚀
+2025-06-29 05:01:16,318 - INFO  - monitor_and_execute_trade - [UNIUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,413 - INFO  - check_rsi                 - [UNIUSDT] - ℹ️  RSI tăng dần từ vùng thấp: 27.38 → 32.00 → 34.25
+2025-06-29 05:01:16,423 - INFO  - monitor_and_execute_trade - [UNIUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:16,424 - INFO  - monitor_and_execute_trade - [UNIUSDT] - ℹ️  
+
+2025-06-29 05:01:16,427 - INFO  - monitor_and_execute_trade - [ADAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,427 - INFO  - monitor_and_execute_trade - [ADAUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: ADAUSDT🚀
+2025-06-29 05:01:16,428 - INFO  - monitor_and_execute_trade - [ADAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,537 - INFO  - monitor_and_execute_trade - [ADAUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:16,539 - INFO  - monitor_and_execute_trade - [ADAUSDT] - ℹ️  
+
+2025-06-29 05:01:16,540 - INFO  - monitor_and_execute_trade - [NEWTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,542 - INFO  - monitor_and_execute_trade - [NEWTUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: NEWTUSDT🚀
+2025-06-29 05:01:16,543 - INFO  - monitor_and_execute_trade - [NEWTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,553 - WARNI - monitor_and_execute_trade - [NEWTUSDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
+2025-06-29 05:01:16,553 - INFO  - monitor_and_execute_trade - [PNUTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,553 - INFO  - monitor_and_execute_trade - [PNUTUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: PNUTUSDT🚀
+2025-06-29 05:01:16,555 - INFO  - monitor_and_execute_trade - [PNUTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,660 - INFO  - monitor_and_execute_trade - [PNUTUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:16,661 - INFO  - monitor_and_execute_trade - [PNUTUSDT] - ℹ️  
+
+2025-06-29 05:01:16,664 - INFO  - monitor_and_execute_trade - [TRUMPUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,664 - INFO  - monitor_and_execute_trade - [TRUMPUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: TRUMPUSDT🚀
+2025-06-29 05:01:16,665 - INFO  - monitor_and_execute_trade - [TRUMPUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,777 - INFO  - monitor_and_execute_trade - [TRUMPUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:16,779 - INFO  - monitor_and_execute_trade - [TRUMPUSDT] - ℹ️  
+
+2025-06-29 05:01:16,780 - INFO  - monitor_and_execute_trade - [HYPEUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,782 - INFO  - monitor_and_execute_trade - [HYPEUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: HYPEUSDT🚀
+2025-06-29 05:01:16,783 - INFO  - monitor_and_execute_trade - [HYPEUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,889 - INFO  - monitor_and_execute_trade - [HYPEUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:16,890 - INFO  - monitor_and_execute_trade - [HYPEUSDT] - ℹ️  
+
+2025-06-29 05:01:16,892 - INFO  - monitor_and_execute_trade - [ENAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:16,894 - INFO  - monitor_and_execute_trade - [ENAUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: ENAUSDT🚀
+2025-06-29 05:01:16,894 - INFO  - monitor_and_execute_trade - [ENAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,003 - INFO  - monitor_and_execute_trade - [ENAUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:17,005 - INFO  - monitor_and_execute_trade - [ENAUSDT] - ℹ️  
+
+2025-06-29 05:01:17,006 - INFO  - monitor_and_execute_trade - [RESOLVUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,008 - INFO  - monitor_and_execute_trade - [RESOLVUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: RESOLVUSDT🚀
+2025-06-29 05:01:17,009 - INFO  - monitor_and_execute_trade - [RESOLVUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,121 - INFO  - monitor_and_execute_trade - [RESOLVUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:17,122 - INFO  - monitor_and_execute_trade - [RESOLVUSDT] - ℹ️  
+
+2025-06-29 05:01:17,124 - INFO  - monitor_and_execute_trade - [VIDTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,126 - INFO  - monitor_and_execute_trade - [VIDTUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: VIDTUSDT🚀
+2025-06-29 05:01:17,127 - INFO  - monitor_and_execute_trade - [VIDTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,146 - ERROR - check_spread_slippage     - [VIDTUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho VIDTUSDT: list index out of range
+2025-06-29 05:01:17,148 - WARNI - monitor_and_execute_trade - [VIDTUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:17,150 - INFO  - monitor_and_execute_trade - [AGIXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,152 - INFO  - monitor_and_execute_trade - [AGIXUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: AGIXUSDT🚀
+2025-06-29 05:01:17,152 - INFO  - monitor_and_execute_trade - [AGIXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,170 - ERROR - check_spread_slippage     - [AGIXUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho AGIXUSDT: list index out of range
+2025-06-29 05:01:17,171 - WARNI - monitor_and_execute_trade - [AGIXUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:17,171 - INFO  - monitor_and_execute_trade - [LINKUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,171 - INFO  - monitor_and_execute_trade - [LINKUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: LINKUSDT🚀
+2025-06-29 05:01:17,171 - INFO  - monitor_and_execute_trade - [LINKUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,278 - INFO  - monitor_and_execute_trade - [LINKUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:17,280 - INFO  - monitor_and_execute_trade - [LINKUSDT] - ℹ️  
+
+2025-06-29 05:01:17,283 - INFO  - monitor_and_execute_trade - [AVAXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,283 - INFO  - monitor_and_execute_trade - [AVAXUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: AVAXUSDT🚀
+2025-06-29 05:01:17,286 - INFO  - monitor_and_execute_trade - [AVAXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,391 - INFO  - monitor_and_execute_trade - [AVAXUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:17,392 - INFO  - monitor_and_execute_trade - [AVAXUSDT] - ℹ️  
+
+2025-06-29 05:01:17,394 - INFO  - monitor_and_execute_trade - [VIRTUALUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,396 - INFO  - monitor_and_execute_trade - [VIRTUALUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: VIRTUALUSDT🚀
+2025-06-29 05:01:17,396 - INFO  - monitor_and_execute_trade - [VIRTUALUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,406 - WARNI - monitor_and_execute_trade - [VIRTUALUSDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
+2025-06-29 05:01:17,406 - INFO  - monitor_and_execute_trade - [JTOUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,408 - INFO  - monitor_and_execute_trade - [JTOUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: JTOUSDT🚀
+2025-06-29 05:01:17,409 - INFO  - monitor_and_execute_trade - [JTOUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,515 - INFO  - monitor_and_execute_trade - [JTOUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:17,516 - INFO  - monitor_and_execute_trade - [JTOUSDT] - ℹ️  
+
+2025-06-29 05:01:17,519 - INFO  - monitor_and_execute_trade - [APTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,520 - INFO  - monitor_and_execute_trade - [APTUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: APTUSDT🚀
+2025-06-29 05:01:17,521 - INFO  - monitor_and_execute_trade - [APTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,530 - WARNI - monitor_and_execute_trade - [APTUSDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
+2025-06-29 05:01:17,531 - INFO  - monitor_and_execute_trade - [LTCUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,532 - INFO  - monitor_and_execute_trade - [LTCUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: LTCUSDT🚀
+2025-06-29 05:01:17,532 - INFO  - monitor_and_execute_trade - [LTCUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,640 - INFO  - monitor_and_execute_trade - [LTCUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:17,641 - INFO  - monitor_and_execute_trade - [LTCUSDT] - ℹ️  
+
+2025-06-29 05:01:17,643 - INFO  - monitor_and_execute_trade - [MOODENGUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,645 - INFO  - monitor_and_execute_trade - [MOODENGUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: MOODENGUSDT🚀
+2025-06-29 05:01:17,645 - INFO  - monitor_and_execute_trade - [MOODENGUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,754 - INFO  - monitor_and_execute_trade - [MOODENGUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:17,755 - INFO  - monitor_and_execute_trade - [MOODENGUSDT] - ℹ️  
+
+2025-06-29 05:01:17,757 - INFO  - monitor_and_execute_trade - [BSWUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,759 - INFO  - monitor_and_execute_trade - [BSWUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: BSWUSDT🚀
+2025-06-29 05:01:17,759 - INFO  - monitor_and_execute_trade - [BSWUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,860 - INFO  - check_rsi                 - [BSWUSDT] - ℹ️  RSI tăng dần từ vùng thấp: 34.55 → 37.80 → 38.74
+2025-06-29 05:01:17,870 - INFO  - monitor_and_execute_trade - [BSWUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:17,871 - INFO  - monitor_and_execute_trade - [BSWUSDT] - ℹ️  
+
+2025-06-29 05:01:17,873 - INFO  - monitor_and_execute_trade - [LINAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,875 - INFO  - monitor_and_execute_trade - [LINAUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: LINAUSDT🚀
+2025-06-29 05:01:17,875 - INFO  - monitor_and_execute_trade - [LINAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,898 - ERROR - check_spread_slippage     - [LINAUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho LINAUSDT: list index out of range
+2025-06-29 05:01:17,900 - WARNI - monitor_and_execute_trade - [LINAUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:17,902 - INFO  - monitor_and_execute_trade - [BNBUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,904 - INFO  - monitor_and_execute_trade - [BNBUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: BNBUSDT🚀
+2025-06-29 05:01:17,905 - INFO  - monitor_and_execute_trade - [BNBUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,913 - WARNI - monitor_and_execute_trade - [BNBUSDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
+2025-06-29 05:01:17,914 - INFO  - monitor_and_execute_trade - [BIDUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:17,915 - INFO  - monitor_and_execute_trade - [BIDUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: BIDUSDT🚀
+2025-06-29 05:01:17,915 - INFO  - monitor_and_execute_trade - [BIDUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,022 - INFO  - monitor_and_execute_trade - [BIDUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:18,023 - INFO  - monitor_and_execute_trade - [BIDUSDT] - ℹ️  
+
+2025-06-29 05:01:18,026 - INFO  - monitor_and_execute_trade - [NEIROUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,026 - INFO  - monitor_and_execute_trade - [NEIROUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: NEIROUSDT🚀
+2025-06-29 05:01:18,028 - INFO  - monitor_and_execute_trade - [NEIROUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,038 - WARNI - monitor_and_execute_trade - [NEIROUSDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
+2025-06-29 05:01:18,038 - INFO  - monitor_and_execute_trade - [FTMUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,039 - INFO  - monitor_and_execute_trade - [FTMUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: FTMUSDT🚀
+2025-06-29 05:01:18,040 - INFO  - monitor_and_execute_trade - [FTMUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,058 - ERROR - check_spread_slippage     - [FTMUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho FTMUSDT: list index out of range
+2025-06-29 05:01:18,058 - WARNI - monitor_and_execute_trade - [FTMUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:18,059 - INFO  - monitor_and_execute_trade - [SPXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,059 - INFO  - monitor_and_execute_trade - [SPXUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: SPXUSDT🚀
+2025-06-29 05:01:18,059 - INFO  - monitor_and_execute_trade - [SPXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,162 - INFO  - monitor_and_execute_trade - [SPXUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:18,164 - INFO  - monitor_and_execute_trade - [SPXUSDT] - ℹ️  
+
+2025-06-29 05:01:18,167 - INFO  - monitor_and_execute_trade - [DMCUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,167 - INFO  - monitor_and_execute_trade - [DMCUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: DMCUSDT🚀
+2025-06-29 05:01:18,170 - INFO  - monitor_and_execute_trade - [DMCUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,238 - WARNI - monitor_and_execute_trade - [DMCUSDT] - ⚠️  Không có trend rõ ràng: long=uptrend, medium=volatile, short=downtrend
+2025-06-29 05:01:18,239 - INFO  - monitor_and_execute_trade - [LQTYUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,240 - INFO  - monitor_and_execute_trade - [LQTYUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: LQTYUSDT🚀
+2025-06-29 05:01:18,243 - INFO  - monitor_and_execute_trade - [LQTYUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,351 - INFO  - monitor_and_execute_trade - [LQTYUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:18,353 - INFO  - monitor_and_execute_trade - [LQTYUSDT] - ℹ️  
+
+2025-06-29 05:01:18,355 - INFO  - monitor_and_execute_trade - [SYRUPUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,357 - INFO  - monitor_and_execute_trade - [SYRUPUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: SYRUPUSDT🚀
+2025-06-29 05:01:18,357 - INFO  - monitor_and_execute_trade - [SYRUPUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,463 - INFO  - monitor_and_execute_trade - [SYRUPUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:18,464 - INFO  - monitor_and_execute_trade - [SYRUPUSDT] - ℹ️  
+
+2025-06-29 05:01:18,466 - INFO  - monitor_and_execute_trade - [WAVESUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,468 - INFO  - monitor_and_execute_trade - [WAVESUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: WAVESUSDT🚀
+2025-06-29 05:01:18,468 - INFO  - monitor_and_execute_trade - [WAVESUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,488 - ERROR - check_spread_slippage     - [WAVESUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho WAVESUSDT: list index out of range
+2025-06-29 05:01:18,489 - WARNI - monitor_and_execute_trade - [WAVESUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:18,492 - INFO  - monitor_and_execute_trade - [AMBUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,492 - INFO  - monitor_and_execute_trade - [AMBUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: AMBUSDT🚀
+2025-06-29 05:01:18,495 - INFO  - monitor_and_execute_trade - [AMBUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,512 - ERROR - check_spread_slippage     - [AMBUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho AMBUSDT: list index out of range
+2025-06-29 05:01:18,512 - WARNI - monitor_and_execute_trade - [AMBUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:18,514 - INFO  - monitor_and_execute_trade - [JUPUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,515 - INFO  - monitor_and_execute_trade - [JUPUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: JUPUSDT🚀
+2025-06-29 05:01:18,515 - INFO  - monitor_and_execute_trade - [JUPUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,621 - INFO  - monitor_and_execute_trade - [JUPUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:18,623 - INFO  - monitor_and_execute_trade - [JUPUSDT] - ℹ️  
+
+2025-06-29 05:01:18,626 - INFO  - monitor_and_execute_trade - [OCEANUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,626 - INFO  - monitor_and_execute_trade - [OCEANUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: OCEANUSDT🚀
+2025-06-29 05:01:18,629 - INFO  - monitor_and_execute_trade - [OCEANUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,647 - ERROR - check_spread_slippage     - [OCEANUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho OCEANUSDT: list index out of range
+2025-06-29 05:01:18,648 - WARNI - monitor_and_execute_trade - [OCEANUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:18,650 - INFO  - monitor_and_execute_trade - [TAOUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,651 - INFO  - monitor_and_execute_trade - [TAOUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: TAOUSDT🚀
+2025-06-29 05:01:18,652 - INFO  - monitor_and_execute_trade - [TAOUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,660 - WARNI - monitor_and_execute_trade - [TAOUSDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
+2025-06-29 05:01:18,661 - INFO  - monitor_and_execute_trade - [MOVEUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,661 - INFO  - monitor_and_execute_trade - [MOVEUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: MOVEUSDT🚀
+2025-06-29 05:01:18,662 - INFO  - monitor_and_execute_trade - [MOVEUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,765 - INFO  - monitor_and_execute_trade - [MOVEUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:18,766 - INFO  - monitor_and_execute_trade - [MOVEUSDT] - ℹ️  
+
+2025-06-29 05:01:18,770 - INFO  - monitor_and_execute_trade - [INJUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,770 - INFO  - monitor_and_execute_trade - [INJUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: INJUSDT🚀
+2025-06-29 05:01:18,772 - INFO  - monitor_and_execute_trade - [INJUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,876 - INFO  - monitor_and_execute_trade - [INJUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:18,877 - INFO  - monitor_and_execute_trade - [INJUSDT] - ℹ️  
+
+2025-06-29 05:01:18,879 - INFO  - monitor_and_execute_trade - [HUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,881 - INFO  - monitor_and_execute_trade - [HUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: HUSDT🚀
+2025-06-29 05:01:18,881 - INFO  - monitor_and_execute_trade - [HUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,988 - INFO  - monitor_and_execute_trade - [HUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:18,990 - INFO  - monitor_and_execute_trade - [HUSDT] - ℹ️  
+
+2025-06-29 05:01:18,991 - INFO  - monitor_and_execute_trade - [NEARUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:18,993 - INFO  - monitor_and_execute_trade - [NEARUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: NEARUSDT🚀
+2025-06-29 05:01:18,994 - INFO  - monitor_and_execute_trade - [NEARUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,103 - INFO  - monitor_and_execute_trade - [NEARUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:19,104 - INFO  - monitor_and_execute_trade - [NEARUSDT] - ℹ️  
+
+2025-06-29 05:01:19,106 - INFO  - monitor_and_execute_trade - [TRXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,108 - INFO  - monitor_and_execute_trade - [TRXUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: TRXUSDT🚀
+2025-06-29 05:01:19,108 - INFO  - monitor_and_execute_trade - [TRXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,182 - WARNI - monitor_and_execute_trade - [TRXUSDT] - ⚠️  Cảnh báo đảo chiều sớm (5m)
+2025-06-29 05:01:19,184 - INFO  - monitor_and_execute_trade - [WLDUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,185 - INFO  - monitor_and_execute_trade - [WLDUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: WLDUSDT🚀
+2025-06-29 05:01:19,188 - INFO  - monitor_and_execute_trade - [WLDUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,293 - INFO  - monitor_and_execute_trade - [WLDUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:19,295 - INFO  - monitor_and_execute_trade - [WLDUSDT] - ℹ️  
+
+2025-06-29 05:01:19,296 - INFO  - monitor_and_execute_trade - [FILUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,299 - INFO  - monitor_and_execute_trade - [FILUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: FILUSDT🚀
+2025-06-29 05:01:19,299 - INFO  - monitor_and_execute_trade - [FILUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,408 - INFO  - monitor_and_execute_trade - [FILUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:19,409 - INFO  - monitor_and_execute_trade - [FILUSDT] - ℹ️  
+
+2025-06-29 05:01:19,411 - INFO  - monitor_and_execute_trade - [TIAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,413 - INFO  - monitor_and_execute_trade - [TIAUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: TIAUSDT🚀
+2025-06-29 05:01:19,413 - INFO  - monitor_and_execute_trade - [TIAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,527 - INFO  - monitor_and_execute_trade - [TIAUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:19,532 - INFO  - monitor_and_execute_trade - [TIAUSDT] - ℹ️  
+
+2025-06-29 05:01:19,532 - INFO  - monitor_and_execute_trade - [POPCATUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,532 - INFO  - monitor_and_execute_trade - [POPCATUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: POPCATUSDT🚀
+2025-06-29 05:01:19,533 - INFO  - monitor_and_execute_trade - [POPCATUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,641 - INFO  - monitor_and_execute_trade - [POPCATUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:19,642 - INFO  - monitor_and_execute_trade - [POPCATUSDT] - ℹ️  
+
+2025-06-29 05:01:19,645 - INFO  - monitor_and_execute_trade - [STRAXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,646 - INFO  - monitor_and_execute_trade - [STRAXUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: STRAXUSDT🚀
+2025-06-29 05:01:19,648 - INFO  - monitor_and_execute_trade - [STRAXUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,667 - ERROR - check_spread_slippage     - [STRAXUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho STRAXUSDT: list index out of range
+2025-06-29 05:01:19,668 - WARNI - monitor_and_execute_trade - [STRAXUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:19,670 - INFO  - monitor_and_execute_trade - [DOTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,671 - INFO  - monitor_and_execute_trade - [DOTUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: DOTUSDT🚀
+2025-06-29 05:01:19,671 - INFO  - monitor_and_execute_trade - [DOTUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,776 - INFO  - monitor_and_execute_trade - [DOTUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:19,777 - INFO  - monitor_and_execute_trade - [DOTUSDT] - ℹ️  
+
+2025-06-29 05:01:19,780 - INFO  - monitor_and_execute_trade - [HIFIUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,780 - INFO  - monitor_and_execute_trade - [HIFIUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: HIFIUSDT🚀
+2025-06-29 05:01:19,783 - INFO  - monitor_and_execute_trade - [HIFIUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,886 - INFO  - monitor_and_execute_trade - [HIFIUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:19,887 - INFO  - monitor_and_execute_trade - [HIFIUSDT] - ℹ️  
+
+2025-06-29 05:01:19,889 - INFO  - monitor_and_execute_trade - [MELANIAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:19,891 - INFO  - monitor_and_execute_trade - [MELANIAUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: MELANIAUSDT🚀
+2025-06-29 05:01:19,891 - INFO  - monitor_and_execute_trade - [MELANIAUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:20,001 - INFO  - monitor_and_execute_trade - [MELANIAUSDT] - ℹ️  Không có tín hiệu giao dịch.
+2025-06-29 05:01:20,002 - INFO  - monitor_and_execute_trade - [MELANIAUSDT] - ℹ️  
+
+2025-06-29 05:01:20,004 - INFO  - monitor_and_execute_trade - [RENUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:20,006 - INFO  - monitor_and_execute_trade - [RENUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: RENUSDT🚀
+2025-06-29 05:01:20,006 - INFO  - monitor_and_execute_trade - [RENUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:20,029 - ERROR - check_spread_slippage     - [RENUSDT] - ❌  Lỗi khi kiểm tra spread/slippage cho RENUSDT: list index out of range
+2025-06-29 05:01:20,030 - WARNI - monitor_and_execute_trade - [RENUSDT] - ⚠️  Spread hoặc slippage không đạt yêu cầu.
+2025-06-29 05:01:20,033 - INFO  - monitor_and_execute_trade - [ARBUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:20,034 - INFO  - monitor_and_execute_trade - [ARBUSDT] - ℹ️  🚀 Đang kiểm tra cặp coin: ARBUSDT🚀
+2025-06-29 05:01:20,036 - INFO  - monitor_and_execute_trade - [ARBUSDT] - ℹ️  *******************************************************************
+2025-06-29 05:01:20,044 - WARNI - monitor_and_execute_trade - [ARBUSDT] - ⚠️  Symbol đã có lệnh mở → bỏ qua.
+2025-06-29 05:01:20,044 - INFO  - monitor_and_execute_trade - [ARBUSDT] - ℹ️  Đã kiểm tra tất cả các cặp coin.
+2025-06-29 05:01:20,045 - INFO  - monitor_and_execute_trade - [ARBUSDT] - ℹ️  Đang chờ 5 phút trước khi kiểm tra lại...
+2025-06-29 05:02:33,518 - ERROR - send_message              - ❌  [Bot[token=7939426875:AAGkhJ9AapXYeNeZ3_lSp36Nr_pILLpEMB0]] Lỗi gửi tin nhắn: Message to edit not found
+Traceback (most recent call last):
+  File "/app/bot_telegram.py", line 16, in send_message
+    message = await bot.edit_message_text(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 4293, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 809, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 697, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 726, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 197, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 353, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message to edit not found
+2025-06-29 05:02:33,520 - ERROR - db_insert_or_update_messa - ❌  Lỗi khi insert/update message_id cho key_map_id daily_pnl_2025-06-29 và bot_type signal: NOT NULL constraint failed: telegram_messages.message_id
+Traceback (most recent call last):
+  File "/app/db_queries.py", line 239, in db_insert_or_update_message_id
+    cursor.execute(
+sqlite3.IntegrityError: NOT NULL constraint failed: telegram_messages.message_id
