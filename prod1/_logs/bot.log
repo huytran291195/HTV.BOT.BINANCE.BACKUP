@@ -1,4 +1,18 @@
-2025-07-03 00:00:00,171 - ERROR - send_message              - ❌  [Bot[token=7939426875:AAGkhJ9AapXYeNeZ3_lSp36Nr_pILLpEMB0]] Lỗi gửi tin nhắn: Message to edit not found
+2025-07-04 00:00:00,852 - INFO  - telegram_send_or_update_m - ℹ️  old message_id: 365
+2025-07-04 00:00:00,854 - INFO  - telegram_send_or_update_m - ℹ️  key: pnl_in_day_2025-06-28
+2025-07-04 00:00:00,854 - INFO  - send_message              - ℹ️  bot: Bot[token=7939426875:AAGkhJ9AapXYeNeZ3_lSp36Nr_pILLpEMB0]
+2025-07-04 00:00:00,855 - INFO  - send_message              - ℹ️  message_id: 365
+2025-07-04 00:00:01,249 - INFO  - telegram_send_or_update_m - ℹ️  old message_id: 380
+2025-07-04 00:00:01,250 - INFO  - telegram_send_or_update_m - ℹ️  key: daily_pnl_2025-07-04
+2025-07-04 00:00:01,255 - INFO  - send_message              - ℹ️  bot: Bot[token=7939426875:AAGkhJ9AapXYeNeZ3_lSp36Nr_pILLpEMB0]
+2025-07-04 00:00:01,256 - INFO  - send_message              - ℹ️  message_id: 380
+2025-07-04 00:00:01,730 - INFO  - send_message              - ℹ️  new message_id: 365
+2025-07-04 00:00:01,731 - INFO  - telegram_send_or_update_m - ℹ️  new message_id: 365
+2025-07-04 00:00:01,736 - INFO  - telegram_send_or_update_m - ℹ️  old message_id: 906
+2025-07-04 00:00:01,737 - INFO  - telegram_send_or_update_m - ℹ️  key: pnl_in_day_2025-06-29
+2025-07-04 00:00:01,738 - INFO  - send_message              - ℹ️  bot: Bot[token=7939426875:AAGkhJ9AapXYeNeZ3_lSp36Nr_pILLpEMB0]
+2025-07-04 00:00:01,739 - INFO  - send_message              - ℹ️  message_id: 906
+2025-07-04 00:00:02,140 - ERROR - send_message              - ❌  [Bot[token=7939426875:AAGkhJ9AapXYeNeZ3_lSp36Nr_pILLpEMB0]] Lỗi gửi tin nhắn: Message to edit not found
 Traceback (most recent call last):
   File "/app/bot_telegram.py", line 18, in send_message
     message = await bot.edit_message_text(
@@ -21,15 +35,13 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 353, in _request_wrapper
     raise BadRequest(message)
 telegram.error.BadRequest: Message to edit not found
-2025-07-03 00:00:00,173 - INFO  - telegram_send_or_update_m - ℹ️  new message_id: None
-2025-07-03 00:00:00,175 - ERROR - db_insert_or_update_messa - ❌  Lỗi khi insert/update message_id cho key_map_id pnl_in_day_2025-06-29 và bot_type signal: NOT NULL constraint failed: telegram_messages.message_id
+2025-07-04 00:00:02,143 - INFO  - telegram_send_or_update_m - ℹ️  new message_id: None
+2025-07-04 00:00:02,145 - ERROR - db_insert_or_update_messa - ❌  Lỗi khi insert/update message_id cho key_map_id pnl_in_day_2025-06-29 và bot_type signal: NOT NULL constraint failed: telegram_messages.message_id
 Traceback (most recent call last):
   File "/app/db_queries.py", line 239, in db_insert_or_update_message_id
     cursor.execute(
 sqlite3.IntegrityError: NOT NULL constraint failed: telegram_messages.message_id
-2025-07-03 00:00:00,177 - INFO  - telegram_send_or_update_m - ℹ️  old message_id: 379
-2025-07-03 00:00:00,179 - INFO  - telegram_send_or_update_m - ℹ️  key: pnl_in_day_2025-07-03
-2025-07-03 00:00:00,179 - INFO  - send_message              - ℹ️  bot: Bot[token=7939426875:AAGkhJ9AapXYeNeZ3_lSp36Nr_pILLpEMB0]
-2025-07-03 00:00:00,180 - INFO  - send_message              - ℹ️  message_id: 379
-2025-07-03 00:00:00,592 - INFO  - send_message              - ℹ️  new message_id: 379
-2025-07-03 00:00:00,593 - INFO  - telegram_send_or_update_m - ℹ️  new message_id: 379
+2025-07-04 00:00:02,148 - INFO  - telegram_send_or_update_m - ℹ️  old message_id: 379
+2025-07-04 00:00:02,150 - INFO  - telegram_send_or_update_m - ℹ️  key: pnl_in_day_2025-07-03
+2025-07-04 00:00:02,152 - INFO  - send_message              - ℹ️  bot: Bot[token=7939426875:AAGkhJ9AapXYeNeZ3_lSp36Nr_pILLpEMB0]
+2025-07-04 00:00:02,153 - INFO  - send_message              - ℹ️  message_id: 379
